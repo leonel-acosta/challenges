@@ -30,19 +30,67 @@ button {
 /* Add your CSS styles below this line. Feel free to replace the comments with your code. Make sure not to put your code into the comments, because then nothing will happen. */
 
 .button1 {
-  /*Style me! Change my border, set a border radius or what you want to try out. :) */
+  border-radius: 50px;
+  padding:2em;
+  color:yellow;
+  background-color:green;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: 1s ease-in-out;
+  border: solid 4px yellow;
+  font-size:30px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
+.button1:hover {
+  background-color:black;
+  color:white;
+  border:solid 4px white;
+  padding: 3em;
+}
+
+  /*Style me! Change my border, set a border radius or what you want to try out. :) */
+
+
 .button2 {
-  /*Style me! Change my color, or my background-color. Or both! You can test out different color modes here - like HEX, RGB, ... */
+border-top-left-radius: 20px;
+border-bottom-right-radius: 20px;
+padding:2em;
+border: solid 5px black;
+text-transform:lowercase;
+background-color:lightpink;
+font-weight: 900;
+}
+
+.button2:active {
+  background-color:red;
+  color:lightpink;
+  border:solid 5px lightpink;
 }
 
 .button3 {
-  /*Style me! You can test out changing the font, or font size, ...*/
+  font-size:24px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color:blue;
+  border:solid 1px blue;
+  transition: 0.5s ease-in
+}
+
+.button3:hover {
+  font-size:42px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color:blue;
+  border:solid 1px blue
 }
 
 .button4 {
-  /*Style me! Can you add a shadow to this button? Maybe play around with the shadow properties, as well? You can even color the shadow, make it bigger or smaller, ... */
+  box-shadow: 10px 10px purple
 }
 
+.button4:hover {
+  box-shadow: 10px 10px black;
+  background-color: purple;
+  color:white;
+  border: solid 1px white;
+}
 /* Feel free to play around with other properties, as well. */
