@@ -35,7 +35,7 @@ li {
   margin: 8px 0;
 }
 
-.user {
+aside .user {
   position: relative;
   border: 2px solid lightslategray;
   border-radius: 4px;
@@ -46,16 +46,16 @@ li {
   background-color: white;
 }
 
-.user .name {
+aside .user .name {
   font-size:16px;
 }
 
-.user .bio {
+aside .user .bio {
   font-size:12px;
   margin:6px 0;
 }
 
-.user .location {
+aside .user .location {
   font-size:10px;
 }
 
