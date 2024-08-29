@@ -13,8 +13,13 @@ div {
   font-family: cursive;
   padding: 8px;
   color:white;
-  background-color: darkgreen;
-  border-radius:50px;
+  background-color: hotpink;
+  border-radius:8px;
+  width:150px;
+  height:150px;
+  text-align:center;
+  padding:20px;
+
 
 
   /* set the height and the width of the box to 150px */
