@@ -35,6 +35,36 @@ li {
   margin: 8px 0;
 }
 
+.user {
+  position: relative;
+  border: 2px solid lightslategray;
+  border-radius: 8px;
+  box-shadow: 4px 4px 0 lightslategray;
+  padding: 20px;
+  max-width: 400px;
+  margin: 0;
+  background-color: white;
+}
+
+
+.name {
+  font-size: 18px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.bio {
+  font-size: 14px;
+  color: darkslategray;
+}
+
+.location {
+  font-size: 12px;
+  font-weight: 600;
+  text-align: end;
+  margin: 0;
+}
+
 aside .user {
   position: relative;
   border: 2px solid lightslategray;
@@ -59,24 +89,13 @@ aside .user .location {
   font-size:10px;
 }
 
-.name {
-  font-size: 18px;
-  text-transform: uppercase;
-  margin: 0;
+ul .bio {
+  display:none;
 }
 
-.bio {
-  font-size: 14px;
-  color: darkslategray;
+ul .location {
+  text-align:left;
 }
-
-.location {
-  font-size: 12px;
-  font-weight: 600;
-  text-align: end;
-  margin: 0;
-}
-
 /*
   Part 1
 
