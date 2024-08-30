@@ -56,7 +56,7 @@ main {
 
 .box--center {
   background-color: #3498db;
-  top:calc(50% - 60px);
+  top:calc(50% - 50px);
   left:calc(50% - 40px)
 
 }
