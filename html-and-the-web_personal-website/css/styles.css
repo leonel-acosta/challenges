@@ -30,8 +30,6 @@ header {
     background-color: var(--secondary-color);
 }
 
-
-
 .navigation__menu{
     display:flex;
     flex-direction:row;
@@ -56,6 +54,16 @@ header {
 
 body {
     background-color: var(--primary-background-color);
+}
+
+.image-gallery{
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+}
+
+.image-gallery img{
+    flex-basis:fit-content;
 }
 
 #services{
