@@ -1,0 +1,10 @@
+:root{
+    --primary-color: #F2613F;
+    --secondary-color:#9B3922;
+    --primary-background-color:#0C0C0C;
+    --secondary-background-color:#481E14;
+    --body-font-family: monospace;
+    --body-font-weight:400;
+    --headings-font-family:monospace;
+    --headings-font-weight:800;
+}
