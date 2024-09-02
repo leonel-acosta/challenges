@@ -1,4 +1,4 @@
-:root {
+:root:root {
     --primary-dark: #2E016D;
     --primary: #3F0097;
     --primary-light: #8236FF;
@@ -30,6 +30,12 @@ body {
   color: var(--white);
 }
 
+.profile {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .profile__image {
   border-radius: 50%;
   max-width: 50%;
@@ -39,6 +45,10 @@ body {
 .tech-stack__list {
   list-style: none;
   padding-left: 0;
+  display:flex;
+  flex-direction: row;
+  gap: min(10px);
+  flex-wrap: wrap;
 }
 
 .tech-stack__list-item {
