@@ -46,6 +46,7 @@ li {
   background-color: white;
 }
 
+
 .name {
   font-size: 18px;
   text-transform: uppercase;
@@ -64,6 +65,38 @@ li {
   margin: 0;
 }
 
+aside .user {
+  position: relative;
+  border: 2px solid lightslategray;
+  border-radius: 4px;
+  box-shadow: 4px 4px 0 lightslategray;
+  padding: 12px;
+  max-width: 250px;
+  margin: 0;
+  background-color: white;
+}
+
+aside .user .name {
+  font-size:16px;
+}
+
+aside .user .bio {
+  font-size:12px;
+  margin:6px 0;
+}
+
+aside .user .location {
+  font-size:10px;
+}
+
+ul .bio {
+  display:none;
+}
+
+ul .location {
+  text-align:left;
+  color:lightslategray
+}
 /*
   Part 1
 
