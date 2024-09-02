@@ -8,3 +8,21 @@
     --headings-font-family:monospace;
     --headings-font-weight:800;
 }
+
+*{
+    box-sizing:border-box;
+    background-color: var(--primary-background-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--headings-font-family);
+    font-weight: var(--headings-font-weight);
+    color:var(--secondary-color)
+}
+
+p, ul,li, a {
+    font-family: var(--body-font-family);
+    font-weight: var(--body-font-weight);
+    color:var(--primary-color)
+}
+
