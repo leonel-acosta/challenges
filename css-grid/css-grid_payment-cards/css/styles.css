@@ -38,10 +38,12 @@ body {
 }
 
 .cards {
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap:2em;
   margin: 0 auto;
   padding: 2rem;
   max-width: 50rem;
-
   /* Add styles to the container */
 }
 
