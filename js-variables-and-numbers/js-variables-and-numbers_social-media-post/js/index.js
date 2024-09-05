@@ -8,18 +8,17 @@ console.clear();
 	- the user who created the post
 	- a boolean called isReported
 */
+// --v-- write your code here --v--
 
 const title = 'Social Media Post'
 
 const postContent = "We've got something amazing lined up for you! Stay tuned for a BIG reveal coming this Friday! 🎉 Trust us, you won't want to miss it. 😉"
 
-const likes = '89'
+const likes = 89
 
 const author = 'Tom'
 
 const isReported = true
-
-// --v-- write your code here --v--
 
 // --^-- write your code here --^--
 
@@ -28,5 +27,7 @@ const isReported = true
 */
 
 // --v-- write your code here --v--
+
+
 
 // --^-- write your code here --^--
