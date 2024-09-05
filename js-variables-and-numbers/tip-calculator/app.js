@@ -1,7 +1,7 @@
 let mealCost = 64;
-let tipPercent = 10;
+let tipPercent = 0.1;
 
-const tipAmount = mealCost*tipPercent/100
+const tipAmount = mealCost * tipPercent
 
 console.log("Tip Amount 10%:", tipAmount, "EUR")
 
