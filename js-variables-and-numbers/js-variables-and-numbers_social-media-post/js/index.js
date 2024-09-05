@@ -31,12 +31,12 @@ const isReported = true
 
 console.log(title)
 console.log(postContent)
-console.log("Likes:" + likes)
+console.log("Likes:" , likes)
 
 likes++
 
-console.log("Likes:" + likes)
-console.log("User:" + user)
-console.log("Reported:" + isReported)
+console.log("Likes after addition:" , likes)
+console.log("User:" , user)
+console.log("Reported:" , isReported)
 
 // --^-- write your code here --^--
