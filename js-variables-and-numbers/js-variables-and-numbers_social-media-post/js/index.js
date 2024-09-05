@@ -14,9 +14,9 @@ const title = 'Social Media Post'
 
 const postContent = "We've got something amazing lined up for you! Stay tuned for a BIG reveal coming this Friday! 🎉 Trust us, you won't want to miss it. 😉"
 
-const likes = 89
+var likes = 89 
 
-const author = 'Tom'
+const user = 'Tom'
 
 const isReported = true
 
@@ -29,5 +29,14 @@ const isReported = true
 // --v-- write your code here --v--
 
 
+console.log(title)
+console.log(postContent)
+console.log("Likes:" + likes)
+
+likes++
+
+console.log("Likes:" + likes)
+console.log("User:" + user)
+console.log("Reported:" + isReported)
 
 // --^-- write your code here --^--
