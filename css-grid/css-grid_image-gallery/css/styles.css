@@ -39,6 +39,9 @@ body {
 }
 
 .teaser-grid {
+  display:grid;
+  grid-template-areas:'spring spring summer summer''autumn autumn winter winter';
+  grid:1rem;
   min-width: 40rem;
   min-height: 100vh;
 
@@ -55,20 +58,27 @@ body {
 }
 
 .teaser-grid__teaser--spring {
+  grid-area:spring; 
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("https://source.unsplash.com/random/600x300?spring");
+    url("https://plus.unsplash.com/premium_photo-1673799490772-2ea0b711e43b");
 }
+
 .teaser-grid__teaser--summer {
+  grid-area:summer; 
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("https://source.unsplash.com/random/600x300?summer");
+    url("https://images.unsplash.com/photo-1504309092620-4d0ec726efa4");
 }
+
 .teaser-grid__teaser--autumn {
+  grid-area:winter; 
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("https://source.unsplash.com/random/600x300?autumn");
+    url("https://plus.unsplash.com/premium_photo-1668967516060-624b8a7021f4");
 }
+
 .teaser-grid__teaser--winter {
+  grid-area:autumn; 
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("https://source.unsplash.com/random/600x300?winter");
+    url("https://plus.unsplash.com/premium_photo-1670493556860-13e006e6faa4");
 }
 
 .teaser-grid__link {
