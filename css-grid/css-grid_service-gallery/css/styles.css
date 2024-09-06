@@ -38,12 +38,53 @@ body {
   max-width: 900px;
   padding: 2rem;
   margin: auto;
+  display:grid;
+  grid:1rem;
+  grid-template-columns: repeat(3 33%);
+  grid-template-rows: repeat(2 50%);
+
 
   /* Add styles to the container */
 }
 
 .services__item {
   padding: 1.4rem;
+}
+
+.services__item.user-surveys{
+  padding: 1.4rem;
+  grid-column:1;
+  grid-row:1
+}
+
+.services__item.usability-testing{
+  padding: 1.4rem;
+  grid-column:2;
+  grid-row:1
+}
+
+.services__item.ux-design{
+  padding: 1.4rem;
+  grid-column:3;
+  grid-row:1
+}
+
+.services__item.development{
+  padding: 1.4rem;
+  grid-column:1;
+  grid-row:2
+}
+
+.services__item.hosting{
+  padding: 1.4rem;
+  grid-column:2;
+  grid-row:2
+}
+
+.services__item.analytics{
+  padding: 1.4rem;
+  grid-column:1;
+  grid-row:2
 }
 
 .services__headline {
