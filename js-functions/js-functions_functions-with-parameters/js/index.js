@@ -7,12 +7,13 @@ console.log("Exercise 1:");
 */
 
 // Uncomment the next line of code and figure out why it does not work:
-// logText;
+logText;
 
 function logText() {
   console.log("This text does not appear. Why?");
 }
-
+logText()
+console.log("Answer:the function was not executed")
 console.log("-------------");
 console.log("Exercise 2:");
 /*
@@ -36,8 +37,13 @@ greetBob();
 greetMary();
 
 // --v-- write your code here --v--
+const name = ["Alice", "Bob", "Mary"]
 
-function greet() {}
+function greet(name) {
+  console.log("Welcome", name, "good to see you again!");
+}
+
+greet(name[1])
 
 // --^-- write your code here --^--
 
@@ -50,5 +56,14 @@ Note: Separation text means the text that is logged into the console before each
 */
 
 // --v-- write your code here --v--
+
+
+function logSeparator() 
+{
+  divider = "--------------"
+  console.log(divider)
+}
+
+logSeparator()
 
 // --^-- write your code here --^--
