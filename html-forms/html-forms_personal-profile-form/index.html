@@ -10,6 +10,43 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <section></section>
+    <section>
+      <h2 id="title">Personal profile</h2>
+      <form class="form" aria-labelledby="title">
+        <p>We want to get to know you. Please enter your personal information.</p>
+        <fieldset id="personal-information">
+          <legend>Personal Information</legend>
+
+          <label for="first-name">First name</label>
+          <input required id="first-name" type="text" name="first-name" placeholder="First Name" aria-label="First Name">
+
+          <label for="last-name">Last name</label>
+          <input required id="last-name" type="text" name="last-name" placeholder="Last Name" aria-label="Last Name">
+
+          <label for="birthday">Last name</label>
+          <input required id="birthday" type="date" name="birthday" placeholder="birthday" aria-label="birthday">
+
+        </fieldset>
+        <p>Can you tell us a little bit more? We want to annoy you with unwanted ads.</p>
+
+        <fieldset id="further-information">
+          <legend>Further Information</legend>
+
+          <label for="favorite-color">Favorite color</label>
+          <input required id="favorite-color" type="color" name="favorite-color" placeholder="Favorite color" aria-label="Favorite color" >
+
+          <label for="favorite-pet">What's your favorite pet?</label>
+          <select required id="favorite-pet" name="favorite-pet" placeholder="--Please choose an option--">
+            <option value="dog" aria-label="Dog">Dog</option>
+            <option value="cat" aria-label="Cat">Cat</option>
+            <option value="turtle" aria-label="Turtle">Turtle</option>
+            <option value="fish" aria-label="Fish">Fish</option>
+            <option value="canary" aria-label="Canary">Canary</option>
+            <option value="grizzly-bear" aria-label="Grizzly Bear">Grizzly Bear</option>
+          </select>
+        </fieldset>
+        <button class="button" type="submit">Submit</button>
+      </form>
+    </section>
   </body>
 </html>
