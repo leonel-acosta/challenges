@@ -13,8 +13,8 @@
   <body>
     <main>
       <h1>Service</h1>
-      <h2>Customer complaint form</h2>
-      <p>
+      <h2 id="title">Customer complaint form</h2>
+      <p id="description">
         Fill out this form to complain to customer support about our poor
         service. Please note that due to an increased volume of requests, it
         currently takes us several months to respond to your request.
@@ -23,35 +23,41 @@
         <strong>Note:</strong> This form is not intended to be used for any
         other purpose than to complain to customer support.
       </p>
-      <form data-js="form">
-        <fieldset>
-          <legend>Personal Information</legend>
-          <label for="first-name">First Name</label>
+      <form data-js="form" aria-labelledby="title">
+        <fieldset aria-describedby="description">
+          <legend aria-label="personal-information">Personal Information</legend>
+          <label for="first-name" aria-describedby="first-name">First Name</label>
           <input
+            required
             type="text"
             name="firstName"
             id="first-name"
             placeholder="Your first name"
+            minlength="4"
+            maxlength="30"
           />
 
-          <label for="last-name">Last Name</label>
+          <label for="last-name" aria-describedby="last-name">Last Name</label>
           <input
+            required
             type="text"
             name="lastName"
             id="last-name"
             placeholder="Your last name"
+            minlength="4"
+            maxlength="30"
           />
 
-          <label for="age">Age</label>
-          <input type="number" name="age" id="age" />
+          <label for="age" aria-describedby="age">Age</label>
+          <input type="number" name="age" id="age" min="14"/>
 
-          <label for="email">Email</label>
-          <input type="text" name="email" id="email" />
+          <label for="email" aria-describedby="email">Email</label>
+          <input type="email" name="email" id="email" />
         </fieldset>
 
         <fieldset>
           <legend>Your complaint</legend>
-          <label for="complaint">What went wrong?</label>
+          <label for="complaint" aria-describedby="complaint">What went wrong?</label>
           <select name="complaint" id="complaint">
             <option value="nothing" selected>
               Nothing, everything is fine!
@@ -62,14 +68,14 @@
             </option>
           </select>
 
-          <label for="details">Details about your complaint</label>
+          <label for="details" aria-describedby="details">Details about your complaint</label>
           <textarea
             name="details"
             id="details"
             placeholder="Please provide as much detail as possible"
           ></textarea>
 
-          <label for="badness"
+          <label for="badness" aria-describedby="badness"
             >How bad was your experience? (On a scale from <q>meh</q> to
             <q>abysmal</q>)
           </label>
@@ -82,11 +88,12 @@
             value="100"
           />
 
-          <label for="order-date">Order Date</label>
+          <label for="order-date" aria-describedby="order-date">Order Date</label>
           <input type="date" name="orderDate" id="order-date" />
 
-          <label for="terms-of-service">
+          <label for="terms-of-service" aria-describedby="terms-of-service">
             <input
+              required
               type="checkbox"
               name="terms-of-service"
               id="terms-of-service"
