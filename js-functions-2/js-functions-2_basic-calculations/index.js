@@ -11,28 +11,34 @@ They should return the result of the respective calculation:
 */
 
 function add(a, b) {
-  // Code here
+    return a + b;
 }
+add()
 
 function subtract(a, b) {
-  // Code here
+  return a - b
 }
+subtract()
 
 function multiply(a, b) {
-  // Code here
+    return a * b
 }
+multiply()
 
 function divide(a, b) {
-  // Code here
+  return a / b
 }
+divide()
 
 function remainder(a, b) {
-  // Code here
+  return  a % b
 }
+remainder()
 
 /*
 These console.asserts check if your functions are correct. If nothing appears in your console it works properly!
 */
+
 
 console.assert(
   add(1, 1) === 2,
