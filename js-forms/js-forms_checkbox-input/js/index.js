@@ -29,10 +29,6 @@ form.addEventListener("submit", (event) => {
   event.preventDefault();
 
   // --v-- write your code here --v--
-  const formData = new FormData(event.target);
-  const data = Object.fromEntries(formData);
-  console.log(data)
-
   if (event.target.tos.checked === false){
     event.target.tos.focus;
     showTosError()
