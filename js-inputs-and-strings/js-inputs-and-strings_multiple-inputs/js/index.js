@@ -15,8 +15,26 @@ const firstInput = document.querySelector("[data-js=first-input]");
 const secondInput = document.querySelector("[data-js=second-input]");
 const button = document.querySelector("[data-js=button]");
 
+// Copy first field value to second input field
 
 button.addEventListener('click', () => {
-    secondInput.value = firstInput.value
-    secondInput.value = secondInput.value.toUpperCase()
+    document.getElementById("second-input").value = firstInput.value()
+}) 
+
+
+// Copy first field value to second input field and transform it to uppercase
+
+button.addEventListener('click', () => {
+    document.getElementById("second-input").value = firstInput.value.toUpperCase()
+}) 
+
+// Switch value between two fields
+
+button.addEventListener('click', () => {
+    firstValue = firstInput.value
+    secondValue = secondInput.value
+
+    document.getElementById("first-input").value = secondValue
+    document.getElementById("second-input").value = firstValue
 })
+
