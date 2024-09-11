@@ -34,7 +34,7 @@ changeBoxColor()
 function changeBoxRadius() {
     inputRadius.addEventListener('click', () => {
         const radius = inputRadius.value;
-        box.style.borderRadius = radius + "px" 
+        box.style.borderRadius = radius + "%" 
         console.log("Box Border Radius:", radius + "px")
     })}
     
