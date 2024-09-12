@@ -42,6 +42,6 @@ const imageSrc =
 
  const button = document.querySelector("button")
 
- button.addEventListener("click", (event) => {
-  console.log("")
+ button.addEventListener("click", (eventa) => {
+  console.log("product price:", price)
  })
