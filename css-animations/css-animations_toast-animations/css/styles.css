@@ -65,18 +65,22 @@ body {
 
 @keyframes popup {
   0%{
-    transform: translate3d(-150%, 0, 0);
+    transform: translate3d(-150%, 0, 0) rotate(2deg) ;
     background-color: rgb(109, 108, 52);
   }
-  30%{
-    transform: translate3d(-0%, 0, 0);
+  35%{
+    transform: translate3d(-5%, 0, 0) rotate(-2deg);
     background-color: rgb(49, 49, 44);
   }
-  60%{
-    transform: translate3d(-0%, 0, 0);
+  50%{
+    transform: translate3d(0%, 0, 0) rotate(2deg);
     background-color: rgb(122, 122, 117);
   }
-  100%{  transform: translate3d(-150%, 0, 0);
+  65%{
+    transform: translate3d(-5%, 0, 0) rotate(-2deg);
+    background-color: rgb(122, 122, 117);
+  }
+  100%{  transform: translate3d(-150%, 0, 0) rotate(2deg);
     background-color: rgb(255, 102, 0);}
 } 
 
