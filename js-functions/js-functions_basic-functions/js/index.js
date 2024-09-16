@@ -10,21 +10,47 @@ console.clear();
 
 // --v-- write your code here --v--
 
+const title = "The Lord of the Javascript"
+
+const author = "Mario"
+
+let rating = 7.0
+
+let sales = 4200
+
 // --^-- write your code here --^--
 
 /*
 2: Log all variables to the console, for example:
+*/
+console.log("Title:", title)
+console.log("Author:", author)
+console.log("Rating:", rating)
+console.log("Sales:", sales)
 
-Title: The Lord of the Javascript
-Author: Mario
-Rating: 4.2
-Sales: 120
-
+/*
 Increase the number of sales and change the rating of the book afterwards.
 Then log all variables to the console again.
 */
 
 // --v-- write your code here --v--
+
+function newRating(){
+  
+  const newRating = rating + 1
+
+  console.log("New Rating:", newRating)
+}
+
+newRating()
+
+function recentSales(){
+  newSales = 14;
+  const recentSales = sales + newSales
+  console.log("Recent sales:", recentSales)
+}
+
+recentSales()
 
 // --^-- write your code here --^--
 
@@ -38,4 +64,16 @@ Then log all variables to the console again.
 
 // --v-- write your code here --v--
 
+console.clear()
+
+function logBookData(){
+  console.log("Title:", title)
+  console.log("Author:", author)
+  console.log("Rating:", rating)
+  console.log("Sales:", sales)
+  newRating(), 
+  recentSales()
+}
+
+logBookData()
 // --^-- write your code here --^--
