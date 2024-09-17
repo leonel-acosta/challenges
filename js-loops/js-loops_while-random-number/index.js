@@ -3,10 +3,15 @@ console.clear();
 // `while` loop
 
 let number = 0;
-let count = 0;
+let count = 10;
 
 // --v-- write/change code here --v--
 
+while (number <= 0.9){
+  number = Math.random();
+  count ++
+  console.log(number)
+}
 // --^-- write/change code here --^--
 
 console.log(
