@@ -6,6 +6,10 @@ console.clear();
 
 const item = ["Egg", 0.25, 12];
 
+const [name, price, quantity] = item
+
+console.log(name, price, quantity)
+
 // example: export const [value1, value2] = array;
 
 // EXERCISE 2
@@ -13,11 +17,19 @@ const item = ["Egg", 0.25, 12];
 
 const personChris = [12, "Chris", "Owen"];
 
+const [ageOfChris, firstNameOfChris, lastNameOfChris] = personChris
+
+console.log(firstNameOfChris, lastNameOfChris, ageOfChris)
+
 // EXERCISE 3
 // Use array destructuring to extract the variables "firstNameOfAlex" and "lastNameOfAlex".
 // Make sure not to have unused variables.
 
 const personAlex = ["Alex", 12, "Main"];
+
+const [firstNameOfAlex, ,lastNameOfAlex] = personAlex
+
+console.log(firstNameOfAlex, lastNameOfAlex)
 
 // EXERCISE 4
 // Use array destructuring to extract the last name from the array
@@ -25,11 +37,23 @@ const personAlex = ["Alex", 12, "Main"];
 
 const students = ["Christina", "Jon", "Alexandare"];
 
+const [Christina, Jon, Alexandare] = students
+
+const lastName = Alexandare
+
+console.log(lastName)
+
+
 // EXERCISE 5
 // Use array destructuring to extract all of the names from this nested array.
 // Assign the given order of students to variables called "student1" to "student5".
 
 const nestedStudents = ["Chris", ["Ahmad", "Antigoni"], ["Toby", "Sam"]];
+
+const [student1, [student2, student3],[student4, student5]] = nestedStudents
+
+console.log(student1, student2, student3, student4, student5)
+
 
 // EXERCISE 6
 // Spread the values of the values array into the function call of the add function.
@@ -37,13 +61,16 @@ const nestedStudents = ["Chris", ["Ahmad", "Antigoni"], ["Toby", "Sam"]];
 
 const values = [1, 6, 7, 9, 12, 5, 4];
 
-const result = add(1); // Spread values inside this function call
+const result = add(...values); // Spread values inside this function call
 
 function add(...values) {
   return values.reduce(
     (previousValue, currentValue) => previousValue + currentValue
-  );
+  )
 }
+
+console.log(result);
+export { result }
 
 // EXERCISE 7
 // Write a function reverseArrayWithoutMutating that takes an array as an argument and returns a new array containing all of the items that are in the array that was passed in but in reverse order. 
@@ -58,6 +85,7 @@ function add(...values) {
 
 const arr = [1, 2, 3];
 export function reverseArrayWithoutMutating(arr) {
+  console.log(arr)
   // write your code here
 }
 const reverseArr = reverseArrayWithoutMutating(arr);
@@ -77,7 +105,8 @@ console.log(arr); // Should still log [1, 2, 3]
 const array1 = [3, 6, 1];
 const array2 = [8, 5, 2];
 export function mergeAndSortArrays(array1, array2) {
-  // write your code here
+  return [...array1, ...array2].sort((a, b) => a - b);
 }
+
 const mergedAndSorted = mergeAndSortArrays(array1, array2);
 console.log(mergedAndSorted); // Should log [1, 2, 3, 5, 6, 8]
