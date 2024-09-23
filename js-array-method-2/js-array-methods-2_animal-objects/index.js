@@ -78,9 +78,11 @@ const animals = [
 ];
 
 // Hint: Besides the array method, check out the string method `startsWith()`.
-const firstAnimalStartingWithLetterG = null;
+const firstAnimalStartingWithLetterG = animals.find((animal) => animal.name.startsWith("g"));
+console.log(firstAnimalStartingWithLetterG)
 
-const indexOfAnimalWithNameLongerFive = null;
+//const indexOfAnimalWithNameLongerFive = animals.filter((animal) => animal.name.length > 5 ? index.push(idx));
+//console.log(indexOfAnimalWithNameLongerFive)
 
 // Note:
 // - Sorting strings is slightly more complicated than sorting numbers.
@@ -91,16 +93,35 @@ const indexOfAnimalWithNameLongerFive = null;
 // Hint: sort() mutates the original array, which is bad.
 // -> Use animals.slice().sort(...) to make a copy (and the tests work).
 
-const animalsSortedAlphabetically = null;
+const animalsSortedAlphabetically = animals.sort((a, b) => {
+  const nameA = typeof a.name.toLowerCase();
+  const nameB = typeof a.name.toLowerCase();
+  if (nameA < nameB) {
+    return -1;
+  }
+  if (nameA > nameB) {
+    return 1;
+  } else 
+  return 0;
+});
 
-const animalsSortedByWeightStartingWithLowest = null;
+console.log(animalsSortedAlphabetically)
 
-const animalsSortedByWeightReversed = null;
+const animalsSortedByWeightStartingWithLowest = animals.slice().sort((a,b) => a.weight - b.weight);
+console.log(animalsSortedByWeightStartingWithLowest)
+
+const animalsSortedByWeightReversed = animals.slice().sort(((a,b) => a.weight - b.weight)).reverse();
+console.log("reversed:", animalsSortedByWeightReversed)
 
 const animalWithWeightMoreThanFivehundredExists = null;
 
 // Hint: Filter for Europe first, then check every animal for its weight.
-const allAnimalsInEuropeWeighLessThanOnehundred = null;
+const allAnimalsInEuropeWeighLessThanOnehundred = animals
+  .filter((animal) => animal.continents.includes("Europe"))
+  .every((animal) => animal.weight < 100)
+  ;
+
+  console.log(allAnimalsInEuropeWeighLessThanOnehundred)
 
 // Hint: filter + map + reduce
 const weightOfAllAnimalsInAfrica = null;
@@ -110,7 +131,7 @@ const averageWeightOfAllAnimalsInAfrica = null;
 
 export {
   firstAnimalStartingWithLetterG,
-  indexOfAnimalWithNameLongerFive,
+  //indexOfAnimalWithNameLongerFive,
   animalsSortedAlphabetically,
   animalsSortedByWeightStartingWithLowest,
   animalsSortedByWeightReversed,
