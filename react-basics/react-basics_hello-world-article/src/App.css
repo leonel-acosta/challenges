@@ -38,8 +38,13 @@ article {
 
 h1 {
   color: var(--grey-dark);
+  text-transform: uppercase;
 }
 
 p {
-  color: var(--black);
+  color: var(--white);
+}
+
+p + .small {
+  font-weight:bold;
 }
