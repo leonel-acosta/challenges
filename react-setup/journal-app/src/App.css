@@ -1,42 +1,134 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+body{
+  background-color: white;
+  color:black
+}
+
+header {
+  background-color:lightgray;
+  padding:1em 0 1em 0;
+  height:2.5em;
+  width:100%;
+  position:fixed;
+  top:0;
+  display:block;
+}
+
+header h1 {
+  color:black;
+  font-size:1em;
+  text-align:center;
+  text-transform: uppercase;
+}
+
+footer {
+  display:block;
+  background-color: black;
+  color:white;
+  text-align:center;
+  position:fixed;
+  bottom:0;
+  width:100%;
+  padding-bottom:1em;
+  height:3em;}
+
+/* form section */
+form{
   text-align: center;
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  align-content: center;
+  padding:2em;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+form h2 {
+  color:black;
+  text-align:center;
+  text-transform: uppercase;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+label {
+  color:black;
+  text-align:left;
+  font-size:0.8rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+input { 
+  border-radius:5px;
+  border: solid 0.5px darkgray;
+  background-color:white;
+  color:black;
+  padding:1em;
+  margin-bottom:1em;
 }
 
-.card {
-  padding: 2em;
+button {
+  background-color:orangered !important;
+  padding:1em 2em;
+  font-weight: bold;
 }
 
-.read-the-docs {
-  color: #888;
+button:hover {
+  background-color:black !important;
 }
+
+/* comments section */
+
+.comment__section {
+  padding:2em;
+}
+
+.tab{
+  font-weight: bold;
+  font-size:1.2rem;
+}
+
+.tab:hover{
+  color:orangered;
+}
+
+.comment__card{
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.comment__date {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size:1rem;
+  flex-basis:100%;
+  text-align:center
+}
+
+.title__holder{
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+  justify-content: space-between;
+}
+.comment__title{
+  font-weight: bold;
+  font-size:1.2rem;
+  flex-basis:80%;
+}
+
+.star-icon {
+  width:22px;
+  flex-basis:10%;
+}
+
+.star-icon__active {
+  color:orange;
+  flex-basis:20%;
+}
+
+
+.comment__content{
+  font-size: 1rem;
+  font-weight: normal;
+  flex-basis:100%;
+  text-align: left;
+}
+
