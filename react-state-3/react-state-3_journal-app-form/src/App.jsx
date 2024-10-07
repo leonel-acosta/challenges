@@ -40,6 +40,8 @@ function App() {
   const [entries, setEntries] = useState(initialEntries)
 
   function handleAddEntry(newEntry){
+    const date = new Date().toLocaleDateString("en-us", { dateStyle: "medium" });
+    newEntry.date = date;
     setEntries([...entries, newEntry]);
     console.log();
     console.log(newEntry)
