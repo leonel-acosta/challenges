@@ -10,6 +10,7 @@ export default function Form({ onAddTag }) {
 
     event.target.reset();
     event.target.elements.tag.focus();
+    console.log(onAddTag)
   }
 
   return (
