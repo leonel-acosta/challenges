@@ -1,9 +1,14 @@
 import "./App.css";
+import { useState } from "react"
 
 export default function App() {
-  let code = "?";
-
+  let [code, setCode] = useState();
+  
   const validCode = "🐡🐠🐋";
+
+  function handleClick(){
+    setCode(validCode) 
+  }
 
   return (
     <div className="container">
@@ -11,7 +16,8 @@ export default function App() {
         <button
           type="button"
           onClick={() => {
-            console.log("Update Code!");
+            setCode("🐡")
+            console.log("Update Code! = 🐡");
           }}
         >
           <span role="img" aria-label="Pufferfish">
@@ -21,7 +27,9 @@ export default function App() {
         <button
           type="button"
           onClick={() => {
-            console.log("Update Code!");
+            setCode("🐋")
+            handleClick()
+            console.log("Update Code! = 🐋");
           }}
         >
           <span role="img" aria-label="Whale">
@@ -31,7 +39,8 @@ export default function App() {
         <button
           type="button"
           onClick={() => {
-            console.log("Update Code!");
+            setCode("🐠")
+            console.log("Update Code! = 🐠");
           }}
         >
           <span role="img" aria-label="Clownfish">
