@@ -10,6 +10,10 @@ const company = {
   location: "Berlin",
 };
 
+export const {name} = company
+
+console.log(name)
+
 // example: export const {value1} = myObject;
 
 // EXERCISE 2
@@ -21,6 +25,10 @@ const company = {
 
 const user = { name: "John", years: 30 };
 
+export const {name: userName, years: userAge, isAdmin = false} = user
+
+console.log("name:",userName,"Age:", userAge, "Admin access:", isAdmin)
+
 // EXERCISE 3
 // Extract the variables from the dog object and
 // rename them like "dogName", "dogBreed", and "dogAge", respectively.
@@ -30,6 +38,10 @@ const dog = {
   breed: "husky",
   age: 5,
 };
+
+export const {name : dogName, breed : dogBreed, age : dogAge} = dog
+
+console.log("Dog Name:",dogName, "Dog Breed:", dogBreed, "Dog Age:", dogAge)
 
 // EXERCISE 4
 // Extract the 'lastName' property from the person object as "personLastName".
@@ -41,10 +53,14 @@ const person = {
   firstName: "Alex",
 };
 
+export const { lastName : personLastName, ...moreInformation } = person
+
+console.log(personLastName)
+console.log(moreInformation)
 // EXERCISE 5
 // Rewrite the following function (logInfo) to use destructuring assignment for the three variables it creates:
 
-const logInfo = (city) => {
+export const logInfo = (city) => {
   const name = city.name;
   const country = city.country;
   const numPeople = city.population;
@@ -52,14 +68,16 @@ const logInfo = (city) => {
   return `${name} is in ${country} and has ${numPeople} inhabitants in it.`
 }
 
-const destructuringLogInfo = (city) => {
+export const destructuringLogInfo = (city) => {
   // (Hint: Lines 48-50 should be replaced with a single line and you shouldn't change anything else).
   // your code here
 
+  const {name, country, population : numPeople} = city
 
   // your code here
   return `${name} is in ${country} and has ${numPeople} inhabitants in it.`
 }
 
 // This is how you would call it:
- destructuringLogInfo({ name: "Marseille", country: "France", population: 861635 });
+destructuringLogInfo({ name: "Marseille", country: "France", population: 861635 });
+
