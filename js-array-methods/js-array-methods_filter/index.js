@@ -23,13 +23,31 @@ const cards = [
   },
 ];
 
-const onlyCardWithIdTwo = null;
+const onlyCardWithIdTwo = cards.filter((card) => {
+  return card.id.startsWith(2)
+});
 
-const allCardsWith3Tags = null;
+console.log("1:", onlyCardWithIdTwo)
 
-const allCardsThatAreNotBookmarked = null;
+const allCardsWith3Tags = cards.filter((card) => {
+  card.tags.length === 3; 
+});
 
-const allCardsWithTagsHTMLOrJSThatAreBookmarked = null;
+console.log("2:", allCardsWith3Tags)
+
+
+const allCardsThatAreNotBookmarked = cards.filter((card) => {
+  return card.isBookmarked === false
+})
+
+console.log("3:", allCardsThatAreNotBookmarked)
+
+
+const allCardsWithTagsHTMLOrJSThatAreBookmarked = cards.filter((card) => {
+  return card.isBookmarked = true && card.tags.includes("html")
+})
+
+console.log("4:", allCardsWithTagsHTMLOrJSThatAreBookmarked)
 
 export {
   onlyCardWithIdTwo,
